@@ -1,0 +1,520 @@
+.home {
+  width: 100%;
+  align-items: center;
+  font-size: bolder;
+  background-color: white !important; 
+  background-image: url(../assets/violetDrops.jpg) ; 
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+  z-index: 1;
+}
+
+.nameContainer{
+  
+  text-align: center;
+  position: absolute;
+  z-index:2;
+  transform: translateY(-70%);
+ 
+}
+.text1{
+  font-size: 120px;
+  letter-spacing: 5px;
+  color:orange;
+  font-weight: bolder;
+  position: relative;
+
+}
+.text2{
+  font-size:70px;
+  color:rgba(140, 22, 236, 1);
+  font-weight: bolder;
+  margin-top:-40px;
+  letter-spacing: 9px;
+  animation: text 3s 1;
+}
+
+@keyframes text{
+  0%{
+    color:black;
+    margin-bottom: -40px;
+    color:rgba(140, 22, 236, 0);
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+    color:rgba(140, 22, 236, 0);
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+
+}
+
+.about span{
+  display:block;
+}
+
+.textCanvas {
+  width: 100vw;
+  height: 100vh;
+  min-height:  900px;
+  max-height: 1500px;
+  transform: translateY(-90px);
+  padding-left: 20px;
+  z-index:1;
+}
+
+.about .prompt {
+  width: 40%;
+  font-size: 30px;
+}
+.prompt svg {
+  font-size: 40px;
+  margin: 5px;
+  color: white;
+}
+
+.skillsTitle{
+  color: #0c0c53;
+  min-height:500px;
+}
+
+.skillsTitle h1{
+width: 250px;
+background-color:#7a57d1 ;
+border-top-right-radius:20px;
+display: inline-block;
+padding-right: 1200px;
+border-bottom: 5px solid ;
+font-size: 30px;
+text-align: left;
+font-family: 'Bebas Neue', cursive;
+margin-top: -30px;
+text-indent:10px;
+}
+
+
+.buttons{
+  width:100px;
+  height: 30px;
+  margin: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: rgb(206, 65, 119);
+  border-radius: 20px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: inset 1px -5px 1px 1px rgba(0, 0, 0, 0.2);
+  transition:0.1s;
+  text-shadow: 0px 1px   rgba(0, 0, 0, 0.2);
+}
+.buttons:hover{
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+}
+.buttons:active{
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+.buttons:nth-child(1){
+  background:#d19feb;
+}
+.buttons:nth-child(2){
+  background:#fffd9d;
+}
+.buttons:nth-child(3){
+  background:#f7d08c; ;
+}
+.buttons:nth-child(4){
+  background:#bfed82;
+}
+
+
+.list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 200px 0px 200px;
+}
+.skills-container{
+  overflow: hidden;
+  margin-top: 0px;
+  color: white;
+  border-radius: 10px;
+  height: 100%;
+}
+.skills-con{
+  width: 95%;
+  margin-top: 15px;
+  margin-left: 4px;
+  transition:all .3s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+#ReactJS{
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+#CSS{
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+#HTML{
+  background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+
+}
+#WebGL{
+  background: #C9CCD3;
+  background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+  background-blend-mode: lighten;
+}
+#Javascript{
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+
+}
+#C{
+  background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+
+}
+#Cplusplus{
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+
+}
+#Java{
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+
+}
+#SQL{
+  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+#MongoDB{
+  background-image: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #d4d4b1 100%);
+}
+#NodeJS{
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+
+}
+.skills-con:hover{
+  transform: scale(1.05);
+}
+.skills-container >h6 svg{
+  width:100%;
+  height: 50px;
+  margin-top: 15px;
+  color: #009efd;
+}
+
+.skills-con:nth-child(2)>.skills-container >h6 svg { 
+  color: #2e52f3;
+}
+.skills-con:nth-child(3)>.skills-container >h6 svg { 
+  color: #f89c11;
+}
+.skills-con:nth-child(4)>.skills-container >h6 svg { 
+  color: #e9ec0d;
+}
+.skills-con:nth-child(5)>.skills-container >h6 svg { 
+  color: #a689f7;
+}
+.skills-con:nth-child(8)>.skills-container >h6 svg { 
+  color:#000005
+}
+.skills-con:nth-child(9)>.skills-container >h6 svg { 
+  color:#07a807
+}
+.skills-con:nth-child(10)>.skills-container >h6 svg { 
+  color:#8aee8a
+}
+
+.Experience {
+  margin-top: 120px;
+
+  
+}
+.Experience h1{
+  background-color: #4fc1e9;
+  transform: translateY(4px);
+  border-top-right-radius:20px;
+  display: inline-block;
+  padding-right: 1200px;
+  border-bottom: 5px solid ;
+  font-size: 30px;
+  width: 250px;
+  text-align: left;
+  font-family: 'Bebas Neue', cursive;
+  text-indent:10px;
+}
+
+.Canvas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 120px;
+}
+
+.Canvas_About_Text{
+  width: 100%;
+  padding-bottom: 50px ;
+  color: #000005;
+}
+.Canvas_About_Text h1{
+  background-color: #5be7c4;
+  border-top-right-radius:20px;
+  display: inline-block;
+  padding-right: 1200px;
+  border-bottom: 5px solid ;
+  font-size: 30px;
+  width: 250px;
+  text-align: left;
+  white-space: nowrap;
+  font-family: 'Bebas Neue', cursive;
+  text-indent:10px;
+}
+.Canvas_About_Text >p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.Canvas_Model{
+  width: 600px;
+  height: 600px;
+  touch-action: none;
+  position: absolute;
+  margin: auto;
+  cursor: grabbing;
+  border-radius: 50%;
+  overflow: hidden;
+  
+
+ 
+}
+.Circle{
+  width:600px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  border:2px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+.Circle::before{
+  content: '';
+  width:590px;
+  height: 590px;
+  border-radius: 50%;
+  animation: animate 6s linear infinite;
+  box-shadow: 10px 10px 20px #69f794;
+}
+@keyframes animate {
+  from {
+  transform: rotate(0deg)
+  }
+  to {
+     transform: rotate(360deg)
+  }
+  
+}
+@media only screen and (max-width: 1050px) {
+  .textCanvas {
+    width:1200px;
+    padding-right: 100px;
+  }
+  .Experience h1{
+    width: 270px;
+    padding-right: 950px;
+  }
+  .skillsTitle h1{
+    width: 270px;
+    padding-right: 950px;
+  }
+  .Canvas_About_Text h1{
+    width: 270px;
+    padding-right: 950px;
+  }
+
+}
+@media only screen and (max-width: 865px) {
+
+  .list{
+    padding: 0px 50px 0px 50px;
+  }
+  .Experience h1{
+    width: 200px;
+    padding-right: 760px;
+  }
+  .skillsTitle h1{
+    width: 180px;
+    padding-right: 760px;
+  }
+  .Canvas_About_Text h1{
+    width: 180px;
+    padding-right: 760px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .text1{
+    font-size: 100px ;
+  }
+  .text2{
+    font-size: 50px ;
+  }
+  .Circle::before{
+    content: '';
+    animation: animate 7s linear infinite;
+  }
+  .textCanvas {
+    padding-right: 100px;
+    width: 1000px;
+  }
+  .Canvas_Model{
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 700px) {
+
+  .text1{
+    font-size: 90px ;
+  }
+  .text2{
+    font-size: 50px ;
+    margin-top: 1px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 40px;
+  }
+  .textCanvas {
+    width: 790px;
+    padding-right: 100px;
+  }
+  .text1{
+    font-size: 80px ;
+  }
+  .text2{
+    font-size: 40px ;
+    margin-top: 1px;
+  }
+  .skills {
+    text-align: center;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
+  .Experience h1{
+    width: 200px;
+    padding-right: 520px;
+    border-bottom: 5px solid ;
+  }
+  .skillsTitle h1{
+    width: 200px;
+    padding-right: 520px;
+    border-bottom: 5px solid ;
+  }
+  .Canvas_About_Text h1{
+    width: 200px;
+    padding-right: 520px;
+    border-bottom: 5px solid ;
+  }
+
+  .Circle{
+    width:400px;
+    height: 400px; 
+  }
+  .Circle::before{
+    content: '';
+    width:350px;
+    height: 350px;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+  }
+  
+  .Canvas_Model{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+   
+  }
+  @media only screen and (max-width: 500px) {
+    .text1{
+      font-size: 70px ;
+    }
+    .text2{
+      font-size: 40px ;
+      margin-top: 1px;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+
+    .textCanvas {
+      width: 650px;
+      padding-right: 100px;
+    }
+    .text1{
+      font-size: 50px ;
+      top:-100px;
+    }
+    .text2{
+      font-size: 40px;
+      transform: translateY(-100px);
+    }
+    
+    .Experience h1{
+      width: 140px;
+      padding-right: 460px;
+      border-bottom: 5px solid ;
+    }
+    .skillsTitle h1{
+      width: 140px;
+      padding-right: 460px;
+      border-bottom: 5px solid ;
+    }
+    .Canvas_About_Text h1{
+      width: 140px;
+      padding-right: 460px;
+      border-bottom: 5px solid ;
+    }
+    
+    .buttons{
+      width: 80px;
+    }
+    .Circle{
+      width:350px;
+      height: 350px; 
+    }
+    .Circle::before{
+      content: '';
+      width:300px;
+      height: 300px;
+      border-radius: 50%;
+      animation: animate 6s linear infinite;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 300px) {
+    .list{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    } 
+  }
+}

@@ -1,0 +1,112 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+.background {
+  width:100%;
+  height: 100%;
+  min-height: 85vh;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  
+  display:grid;
+  width: 1024px;
+  min-width: 60vw;
+  height: auto;
+  min-height: 60vh;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgb(250, 252, 225) ;
+}
+.contact {
+    flex-direction: column;
+  }
+
+  .contactLeft{
+    min-height: 100%;
+    background:url(/public/mushroom.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    
+  }
+  .contactLeft h1{
+   
+    background-color: rgb(248, 168, 48);
+    color:rgb(250, 216, 154);
+    transform: translateY(20px);
+    filter: blur(25px);
+  }
+  .contactLeft h2 {
+    font-size:40px;
+    transform:translateY(-30px);
+    color:rgb(255, 255, 255);
+  }
+  input[type=text]{
+    width: 80%;
+    padding: 10px;
+    border:none;
+    border-bottom:2px solid black;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    resize: none;
+    background-color: transparent;
+  }
+  #contactMessage{
+    width: 80%;
+    padding: 10px;
+    border:none;
+    background-color: transparent;
+    resize: none;
+  }
+  input.input-error,
+  select.input-error{
+    border-color: pink;
+  }
+  .error{
+    color:red;
+    font-size: 15px;
+    margin-top:-10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .contactSendButton{
+    background-color: #a6f02f;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+  }
+  button:disabled{
+    opacity:0.55;
+  }
+  .contactSendButton:hover {
+    background-color: #f0cd2f;
+  }
+  @media only screen and (max-width: 750px) {
+    .contact-box {
+      width:85vw;
+    }
+
+  }
+  @media only screen and (max-width: 600px) {
+    .contact-box {
+      grid-template-columns: 1fr;
+
+    }
+  }

@@ -24,7 +24,7 @@ export const ProjectList = [
         feature: "\n Server-Side data validation would occur for both the login and registration process. " +
         "\n Users would then be re-directed to the dashboard page while also receiving an email for registering via Twilio." +
         "\n All passwords will be hashed using bcryptJS as well as ensuring the entire website renders well on different devices. ",
-
+        code:"https://github.com/ptran23/FoodApp"
         
     },
     {   id:2,

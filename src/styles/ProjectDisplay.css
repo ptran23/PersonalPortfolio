@@ -1,6 +1,6 @@
 .project {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     min-height: 900px;
     display: flex;
     justify-content: center;
@@ -46,7 +46,13 @@
     text-decoration-color: rgb(179, 102, 243);
     margin-top: 10px;
   }
-  
+  .Code{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size:2vw;
+    color: blue;
+    
+  }
   @media only screen and (max-width: 650px) {
   
   .project img {

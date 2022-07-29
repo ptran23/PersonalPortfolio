@@ -29,6 +29,9 @@ function ProjectDisplay() {
           <h2>Features</h2>
           <p> {project.feature}</p>
         </div>
+        <div className='Code'>
+          <a href={project.code}>Codes</a>
+        </div>
 
     </div>
   )

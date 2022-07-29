@@ -19,6 +19,7 @@ function ProjectDisplay() {
             {project.nodeSVG} 
             {project.reactSVG} 
             {project.webglSVG}
+            {project.handlebars}
           </h6>
         </div>
         <div className='Details'>

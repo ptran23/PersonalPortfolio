@@ -3,7 +3,6 @@ import {SiHtml5}  from "react-icons/si";
 import {FaReact}  from "react-icons/fa";
 import {SiCss3}  from "react-icons/si";
 import {SiJavascript}  from "react-icons/si";
-import {SiCplusplus}  from "react-icons/si";
 import {SiJava}  from "react-icons/si";
 import {SiMysql}  from "react-icons/si";
 import {SiMongodb}  from "react-icons/si";

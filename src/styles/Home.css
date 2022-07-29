@@ -223,15 +223,12 @@ text-indent:10px;
   color: #e9ec0d;
 }
 .skills-con:nth-child(5)>.skills-container >h6 svg { 
-  color: #a689f7;
-}
-.skills-con:nth-child(8)>.skills-container >h6 svg { 
   color:#000005
 }
-.skills-con:nth-child(9)>.skills-container >h6 svg { 
+.skills-con:nth-child(7)>.skills-container >h6 svg { 
   color:#07a807
 }
-.skills-con:nth-child(10)>.skills-container >h6 svg { 
+.skills-con:nth-child(8)>.skills-container >h6 svg { 
   color:#8aee8a
 }
 

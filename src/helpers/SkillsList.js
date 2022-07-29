@@ -34,18 +34,7 @@ export default  [
         category:"Languages",
         image: <SiJavascript/>,
     },
-    {   
-        id:6,
-        name:"C",
-        category:"Languages",
-        image: <SiCplusplus/>,
-    },
-    {   
-        id:7,
-        name:"Cplusplus",
-        category:"Languages",
-        image: <SiCplusplus/>,
-    },
+
     {   
         id:8,
         name:"Java",

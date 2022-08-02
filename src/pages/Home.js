@@ -1,7 +1,7 @@
 import React, {useEffect, useRef,useState} from 'react'
 import "../styles/Home.css"
 import {Canvas,extend, useLoader,useFrame} from "@react-three/fiber"
-import House from '../HouseTest'
+import House from '../Room'
 import {OrbitControls,useGLTF, TrackballControls,Stage} from "@react-three/drei"
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
 import * as THREE from 'three'

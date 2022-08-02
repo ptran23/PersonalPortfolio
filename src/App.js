@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import ProjectDisplay from './pages/ProjectDisplay'
+
 function App() {
   return (
     <div className="App">

@@ -21,7 +21,7 @@ export const ProjectList = [
         nodeSVG:<FaNodeJs/> ,
         handlebars:<SiHandlebarsdotjs />,
         detail: " The purpose of this project is to recreate a food Application and hosting Server-Side Web applications using a cloud based solution (Heroku)." ,
-        feature: "\n Server-Side data validation would occur for both the login and registration process. " +
+        feature: "\n Using Rest API to submit data to database once form is validated. " +
         "\n Users would then be re-directed to the dashboard page while also receiving an email for registering via Twilio." +
         "\n All passwords will be hashed using bcryptJS as well as ensuring the entire website renders well on different devices. ",
         code:"https://github.com/ptran23/FoodApp"

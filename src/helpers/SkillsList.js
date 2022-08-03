@@ -8,7 +8,7 @@ import {SiMysql}  from "react-icons/si";
 import {SiMongodb}  from "react-icons/si";
 import {FaNodeJs}  from "react-icons/fa";
 
-export default  [
+const skillsList=  [
     {
         id :1,    
         name:"ReactJS",
@@ -61,3 +61,4 @@ export default  [
     },
 
 ];
+export default skillsList

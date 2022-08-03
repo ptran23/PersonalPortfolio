@@ -8,11 +8,19 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import ProjectDisplay from './pages/ProjectDisplay'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 function App() {
   return (
     <div className="App">
       <Router>
+      <HelmetProvider>
+        <Helmet>
+          <title>About Peter</title>
+          <link rel="canonical" href="https://www.aboutpete.com/" />
+        </Helmet>
+        </HelmetProvider>
         <ScrollToTop/>
         <Navbar/>
         <Routes>

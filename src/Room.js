@@ -11,7 +11,6 @@ export default function Model({ ...props }){
   const { actions } = useAnimations(animations, group)
   useEffect(()=>{
     console.log(actions)
-    actions.fly.play()
     actions.roll.play()
     actions.gotem.play()
   })
@@ -44,11 +43,12 @@ export default function Model({ ...props }){
           <mesh name="Text005_21" geometry={nodes.Text005_21.geometry} material={materials['Material.011']} />
           <mesh name="Text005_22" geometry={nodes.Text005_22.geometry} material={materials['Material.005']} />
         </group>
+        <mesh name="text_aboutme001" geometry={nodes.text_aboutme001.geometry} material={materials.BLACK} position={[-2.94, 3.44, -2.29]} rotation={[Math.PI / 2, 0, 0]} />
         <group name="hULK" position={[-0.86, 1.41, 0.65]}>
           <mesh name="Walls002" geometry={nodes.Walls002.geometry} material={materials.BLACK} />
           <mesh name="Walls002_1" geometry={nodes.Walls002_1.geometry} material={materials.hulk_material} />
         </group>
-        <group name="Plane003" position={[-2.5, 1.11, 0.47]} rotation={[0.11, -0.46, -0.3]}>
+        <group name="Plane003" position={[2.27, 4.64, 1.21]} rotation={[0.1, -0.39, -0.4]}>
           <mesh name="Walls004" geometry={nodes.Walls004.geometry} material={materials.BLACK} />
           <mesh name="Walls004_1" geometry={nodes.Walls004_1.geometry} material={materials.controller_yellow} />
           <mesh name="Walls004_2" geometry={nodes.Walls004_2.geometry} material={materials.controller_blue} />
@@ -64,7 +64,7 @@ export default function Model({ ...props }){
         </group>
         <mesh name="Circle" geometry={nodes.Circle.geometry} material={materials.BLACK} position={[1.21, 1.83, 1.37]} rotation={[1.08, 0.36, 1.54]} />
         <mesh name="Circle001" geometry={nodes.Circle001.geometry} material={materials.BLACK} position={[1.21, 1.83, 1.21]} rotation={[1.83, 0.29, 1.74]} />
-        <mesh name="Circle002" geometry={nodes.Circle002.geometry} material={materials.BLACK} position={[1.24, 1.75, 1.29]} rotation={[1.62, 0.93, 1.56]} />
+        <mesh name="Circle002" geometry={nodes.Circle002.geometry} material={materials.BLACK} position={[1.25, 1.75, 1.29]} rotation={[1.62, 0.93, 1.55]} />
         <mesh name="hULK002" geometry={nodes.hULK002.geometry} material={materials['Material.006']} position={[-0.86, 1.4, 0.65]} />
         <mesh name="cOUCH002" geometry={nodes.cOUCH002.geometry} material={materials.controller_blue} position={[-0.86, 1.43, 0.65]} />
         <mesh name="tvPanel" geometry={nodes.tvPanel.geometry} material={nodes.tvPanel.material} position={[-0.86, 1.4, 0.65]} />
@@ -74,6 +74,8 @@ export default function Model({ ...props }){
           <mesh name="Walls082_2" geometry={nodes.Walls082_2.geometry} material={materials.controller_white} />
         </group>
         <mesh name="stars" geometry={nodes.stars.geometry} material={materials['Material.008']} position={[1.51, 1.07, 0.81]} scale={0.19} />
+        <mesh name="google" geometry={nodes.google.geometry} material={materials.google} position={[1.83, 2.03, 2.25]} rotation={[1.58, 0.07, 1.44]} scale={[1, 1, 1.02]} />
+        <mesh name="codingImage" geometry={nodes.codingImage.geometry} material={materials.codingImage} position={[1.84, 2.08, 2.76]} rotation={[1.57, 0, -1.57]} scale={[1.03, 1, 1]} />
       </group>
     </group>
   )

@@ -13,7 +13,7 @@ import "aos/dist/aos.css"
 
 import Experience from '../pages/Experience'
 import BakedTexture from '../assets/baked.jpg'
-
+import url from '../assets/spyFamily.mp4'
 
 
 function GeometryName() {
@@ -37,10 +37,35 @@ function GeometryName() {
       <mesh geometry={nodes.Sphere011.geometry} material-color="#FFC000" position={[16.76, 0.49, -1.5]} rotation={[0.05, 0.05, -0.1]} />
     </group>
   );
-
 }
+const TV = () => {
+  const {nodes} = useGLTF("room-transformed.glb");
+
+  const [video] = useState(() => {
+    const vid = document.createElement("video");
+    vid.src = url;
+    vid.crossOrigin = "Anonymous";
+    vid.loop = true;
+    vid.muted = true;
+    vid.play();
+    return vid;
+  });
+
+  return (
+    <group >
+      <mesh geometry={nodes.tvPanel.geometry}  rotation = {[0,-7.86,0]} position={[1.79, 2.12, -0.14]} >
+        <planeGeometry args={[1.84, 1.13]} />
+        <meshStandardMaterial  emissive={"white"} side={THREE.DoubleSide}>
+          <videoTexture attach="map" args={[video]} />
+          <videoTexture attach="emissiveMap" args={[video]} />
+        </meshStandardMaterial>
+      </mesh>
+    </group>
+  );
+};
 
 function Home() {
+
   useEffect(() =>{
     Aos.init({duration:1000 })
   },[])
@@ -108,6 +133,7 @@ const allCategories = ['All',...new Set(SkillsList.map(SkillsList => SkillsList.
                 <spotLight intensity={0.8} position={[300, 300, 500]} />
                 <group position-y={-2}  dispose={null}>
                   <House/>
+                  <TV/>
                 </group>
              </Canvas>
             </div>

@@ -38,15 +38,16 @@ function GeometryName() {
     </group>
   );
 }
+// TV panel 
 const TV = () => {
   const {nodes} = useGLTF("room-transformed.glb");
-
   const [video] = useState(() => {
     const vid = document.createElement("video");
     vid.src = url;
     vid.crossOrigin = "Anonymous";
     vid.loop = true;
     vid.muted = true;
+    vid.playsInline=true;
     vid.play();
     return vid;
   });
@@ -64,6 +65,7 @@ const TV = () => {
   );
 };
 
+//AOS init
 function Home() {
 
   useEffect(() =>{

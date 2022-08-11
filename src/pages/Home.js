@@ -1,9 +1,9 @@
 import React, {useEffect, useRef,useState} from 'react'
 import "../styles/Home.css"
 import {Canvas,extend, useLoader,useFrame} from "@react-three/fiber"
+
 import House from '../Room'
-import {OrbitControls,useGLTF, TrackballControls,Stage} from "@react-three/drei"
-import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
+import {OrbitControls,useGLTF, TrackballControls,Stage, useAnimations} from "@react-three/drei"
 import * as THREE from 'three'
 import SkillsList from '../helpers/SkillsList'
 import SkillsComp from '../components/SkillsComp'
@@ -12,29 +12,40 @@ import Aos from 'aos';
 import "aos/dist/aos.css"
 
 import Experience from '../pages/Experience'
-import BakedTexture from '../assets/baked.jpg'
+import BakedTexture from '../assets/bottom.jpg'
+import TopBakedTexture from '../assets/top.jpg'
+import TreeBakedTexture from '../assets/trees.jpg'
 import url from '../assets/spyFamily.mp4'
 
 
-function GeometryName() {
+function World() {
   const ref = useRef()
   useFrame((state,delta) =>  (ref.current.rotation.y += 0.0008))
 
-  const {nodes} = useGLTF('/WORLD2.glb')
-  const [baked]= useLoader(THREE.TextureLoader,[ BakedTexture])
-  extend({ TextGeometry })
+  const {nodes} = useGLTF('/newWorld2.glb')
+  const [baked,topBaked,treeBaked]= useLoader(THREE.TextureLoader,[ BakedTexture,TopBakedTexture,TreeBakedTexture])
+  
+  extend({ World })
   return(
-    <group ref={ref}  position={[0,0,0]} rotation={[0.6,-3,0]}>
-      <mesh geometry={nodes.Sphere.geometry} material={nodes.Sphere.material} position={[1.49, 1.39, 0.25]} rotation={[1.41, -0.09, -1.59]}>
-        <meshBasicMaterial map={baked} map-flipY={false}/>
+    <group ref={ref}  position={[0,0,0]} rotation={[0.2,-3,0]}>
+      <mesh  name="Gem" geometry={nodes.Gem.geometry} material={nodes.Gem.material} position={[-14.26, -2.94, -16.76]}>
+      <meshBasicMaterial map={baked} map-flipY={false}/>
       </mesh>
-      <mesh geometry={nodes.Circle017.geometry}   material-color="#87CEEB" position={[-2.01, 5.3, 1.31]} rotation={[1.77, -0.01, 3.11]} />
-      <mesh geometry={nodes.Circle.geometry}  material-color="#FFFF2E" position={[14.74, 5.56, -0.47]} rotation={[1.93, 0.2, -2.65]} />
-      <mesh geometry={nodes.Icosphere.geometry}   material-color="#FFA500" position={[-8.42, 0.87, -5.02]} rotation={[2.57, 1.06, 0.15]} />
-      <mesh geometry={nodes.Sphere008.geometry} material-color="#FF0000" position={[16.05, 0.61, -1.5]} />
-      <mesh geometry={nodes.Sphere009.geometry} material-color="#00FFFF" position={[15.91, 0.58, -1.5]} rotation={[0, 0.88, 0]} />
-      <mesh geometry={nodes.Sphere010.geometry} material-color="#FFA500" position={[15.91, 0.68, -0.87]} rotation={[0, 1.05, 0]} />
-      <mesh geometry={nodes.Sphere011.geometry} material-color="#FFC000" position={[16.76, 0.49, -1.5]} rotation={[0.05, 0.05, -0.1]} />
+      <mesh  name="bottom" geometry={nodes.bottom.geometry} material={nodes.bottom.material} position={[8.65, 4.86, 7.38]} >
+      <meshBasicMaterial map={baked} map-flipY={false}/>
+      </mesh>
+      <mesh name="MushroomDoor" geometry={nodes.MushroomDoor.geometry} material={nodes.MushroomDoor.material} position={[-11.85, 7.99, -4.34]}>
+      <meshBasicMaterial map={topBaked} map-flipY={false}/>
+      </mesh>
+      <mesh name="trees" geometry={nodes.trees.geometry} material={nodes.trees.material} position={[-1.19, 5.9, -11.45]} rotation={[Math.PI, -0.04, Math.PI]}>
+      <meshBasicMaterial map={treeBaked} map-flipY={false}/>
+      </mesh>
+      <mesh name="PacMan_Emi" geometry={nodes.PacMan_Emi.geometry} material-color="#FFFF2E"  position={[6.47, -13.55, -17.8]}/>
+      <mesh name="pacManGhost_emi" geometry={nodes.pacManGhost_emi.geometry} material-color="#FF69B4" position={[2.05, 5.45, -2.39]} />
+      <mesh name="pacManGhost1_Emi" geometry={nodes.pacManGhost1_Emi.geometry} material-color="#DC143C" position={[15.09, 7.67, -2.86]} />
+      <mesh name="pacManGhost4_Emi" geometry={nodes.pacManGhost4_Emi.geometry} material-color="#FF6700" position={[7.11, 16.25, 4.56]} />
+      <mesh name="GameBoyScreen" geometry={nodes.GameBoyScreen.geometry}  material-color="#FFFF2E" position={[33.75, 1.5, 15.92]}/>
+      <mesh name="sword003" geometry={nodes.sword003.geometry} material-color="#39FFFF" position={[1.35, 6.95, 2.72]} />
     </group>
   );
 }
@@ -67,7 +78,6 @@ const TV = () => {
 
 //AOS init
 function Home() {
-
   useEffect(() =>{
     Aos.init({duration:1000 })
   },[])
@@ -88,7 +98,7 @@ const allCategories = ['All',...new Set(SkillsList.map(SkillsList => SkillsList.
     setSkills(filteredData)
   }
 
-
+ 
   return (
     
     <div className='home'>
@@ -100,10 +110,13 @@ const allCategories = ['All',...new Set(SkillsList.map(SkillsList => SkillsList.
         </div>
 
         <div data-aos="fade-up" className='textCanvas'>
-          <Canvas flat dpr={[1, 2]} camera={{ fov: 25,  position: [0, 20, 10] } }>
-            <TrackballControls enabled={false} />
-            <Stage preset="rembrandt" intensity={0} environment="city">
-            <GeometryName />
+          
+          <Canvas flat dpr={window.devicePixelRatio} camera={{ fov: 30,  position: [0, 20, 10] } } >
+            <TrackballControls enabled={false}/>
+            <Stage preset="rembrandt" intensity={0.5} environment="city">
+            <group>
+            <World/>
+            </group>
             </Stage>
           </Canvas>
         </div>

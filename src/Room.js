@@ -10,7 +10,6 @@ export default function Model({ ...props }){
   const { nodes, materials, animations } = useGLTF('/room-transformed.glb')
   const { actions } = useAnimations(animations, group)
   useEffect(()=>{
-    console.log(actions)
     actions.roll.play()
     actions.gotem.play()
   })

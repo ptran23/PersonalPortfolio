@@ -74,10 +74,12 @@
   min-height:  900px;
   max-height: 1500px;
   transform: translateY(-90px);
-  padding-left: 20px;
+  padding-left: 0px;
   z-index:1;
 }
-
+.textCanvas canvas{
+  
+}
 .about .prompt {
   width: 40%;
   font-size: 30px;

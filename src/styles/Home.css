@@ -35,27 +35,27 @@
   color:orange;
   font-weight: bolder;
   position: relative;
-
+  text-shadow: 4px 4px 6px #000000;
 }
 .text2{
   font-size:70px;
-  color:rgba(140, 22, 236, 1);
+  color:rgb(236, 161, 22);
   font-weight: bolder;
   margin-top:-40px;
   letter-spacing: 9px;
   animation: text 3s 1;
+  text-shadow: 4px 4px 6px #000000;
 }
 
 @keyframes text{
   0%{
-    color:black;
+    color:rgb(92, 95, 226);
     margin-bottom: -40px;
-    color:rgba(140, 22, 236, 0);
   }
   30%{
     letter-spacing: 25px;
     margin-bottom: -40px;
-    color:rgba(140, 22, 236, 0);
+    color:rgb(92, 95, 226);
   }
   85%{
     letter-spacing: 8px;
@@ -77,9 +77,7 @@
   padding-left: 0px;
   z-index:1;
 }
-.textCanvas canvas{
-  
-}
+
 .about .prompt {
   width: 40%;
   font-size: 30px;
@@ -93,7 +91,9 @@
 .skillsTitle{
   color: #0c0c53;
   min-height:500px;
+  
 }
+
 
 .skillsTitle h1{
 width: 250px;
@@ -147,19 +147,23 @@ text-indent:10px;
 .list{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0px 200px 0px 200px;
+  margin-left:0;
+  grid-gap:10px;
+  padding: 0 200px 0 200px;
+ 
+  
 }
 .skills-container{
   overflow: hidden;
-  margin-top: 0px;
+  padding-bottom: 20px;
   color: white;
   border-radius: 10px;
   height: 100%;
+  
 }
 .skills-con{
-  width: 95%;
+ 
   margin-top: 15px;
-  margin-left: 4px;
   transition:all .3s ease-in-out;
   border-radius: 10px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
@@ -340,6 +344,9 @@ text-indent:10px;
     width: 270px;
     padding-right: 950px;
   }
+  .list{
+    padding:0;
+  }
   .Canvas_About_Text h1{
     width: 270px;
     padding-right: 950px;
@@ -348,9 +355,7 @@ text-indent:10px;
 }
 @media only screen and (max-width: 865px) {
 
-  .list{
-    padding: 0px 50px 0px 50px;
-  }
+
   .Experience h1{
     width: 200px;
     padding-right: 760px;
@@ -411,9 +416,7 @@ text-indent:10px;
   .skills {
     text-align: center;
   }
-  .list {
-    padding: 0;
-  }
+
 
   .skills h2 {
     font-size: 30px;

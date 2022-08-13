@@ -79,7 +79,7 @@ const TV = () => {
 //AOS init
 function Home() {
   useEffect(() =>{
-    Aos.init({duration:1000 })
+    Aos.init({duration:1000,once: true })
   },[])
   
 
@@ -123,9 +123,12 @@ const allCategories = ['All',...new Set(SkillsList.map(SkillsList => SkillsList.
       </div>
 
       <div  className='skillsTitle'>
-        <div data-aos="fade-left"className='skill_h1'><h1>SKILLS</h1></div>
-        <ButtonsComp button ={buttons} filter={filter}/>
-        <SkillsComp skillsItem={skillsItem}/>
+       
+        <div data-aos="fade-left"><h1>SKILLS</h1></div>
+            <ButtonsComp button ={buttons} filter={filter}/>
+            <div className='list-container'>
+            <SkillsComp skillsItem={skillsItem}/>
+            </div>
       </div>
 
       

@@ -139,7 +139,7 @@ const allCategories = ['All',...new Set(SkillsList.map(SkillsList => SkillsList.
 
       <div className='Canvas'>
           <div data-aos="fade-left" className='Canvas_About_Text'>
-            <h1>LEARNING, APPLYING And ADAPTING </h1>
+            <h1>LEARNING, APPLYING, And ADAPTING </h1>
             <p>Get to know more about me through the virtual room </p>
           </div>
 

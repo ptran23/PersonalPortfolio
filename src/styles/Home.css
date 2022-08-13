@@ -303,11 +303,9 @@ text-indent:10px;
 @media only screen and (max-width: 1050px) {
   .textCanvas {
     width:1200px;
-    padding-right: 100px;
   }
   .Experience h1{
     width: 270px;
-    padding-right: 950px;
   }
 
   .list{
@@ -315,7 +313,6 @@ text-indent:10px;
   }
   .Canvas_About_Text h1{
     width: 270px;
-    padding-right: 950px;
   }
 
 }
@@ -442,6 +439,11 @@ text-indent:10px;
 
   }
 
+  @media only screen and (max-width: 340px) {
+    .Canvas_About_Text h1{
+      font-size: 28px ;
+    }
+  }
 
   @media only screen and (max-width: 300px) {
     .list{

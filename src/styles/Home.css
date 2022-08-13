@@ -150,13 +150,12 @@ text-indent:10px;
   margin-left:0;
   grid-gap:10px;
   padding: 0 200px 0 200px;
- 
   
 }
 .skills-container{
   overflow: hidden;
   padding-bottom: 20px;
-  color: white;
+  color: rgb(37, 194, 241);
   border-radius: 10px;
   height: 100%;
   
@@ -167,47 +166,34 @@ text-indent:10px;
   transition:all .3s ease-in-out;
   border-radius: 10px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to bottom, #ece6f3 0%, #ace0f9 100%);
 }
 #ReactJS{
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: #009efd;
 }
-#CSS{
-  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+#CSS>svg{
+  color: #2e52f3;
 }
-#HTML{
-  background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+#HTML>svg{
+  color: #f89c11;
 
 }
-#WebGL{
-  background: #C9CCD3;
-  background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
-  background-blend-mode: lighten;
-}
-#Javascript{
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+#Javascript>svg{
+  color: #b8bb19f6;
 
 }
-#C{
-  background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+#Java>svg{
+  color: rgb(240, 125, 125)
 
 }
-#Cplusplus{
-  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
-
+#SQL>svg{
+  color: #009efd;
 }
-#Java{
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-
+#MongoDB>svg{
+  color:#07a807
 }
-#SQL{
-  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
-}
-#MongoDB{
-  background-image: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #d4d4b1 100%);
-}
-#NodeJS{
-  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
-
+#NodeJS>svg{
+  color:#a8dba8
 }
 .skills-con:hover{
   transform: scale(1.05);
@@ -219,24 +205,6 @@ text-indent:10px;
   color: #009efd;
 }
 
-.skills-con:nth-child(2)>.skills-container >h6 svg { 
-  color: #2e52f3;
-}
-.skills-con:nth-child(3)>.skills-container >h6 svg { 
-  color: #f89c11;
-}
-.skills-con:nth-child(4)>.skills-container >h6 svg { 
-  color: #e9ec0d;
-}
-.skills-con:nth-child(5)>.skills-container >h6 svg { 
-  color:#000005
-}
-.skills-con:nth-child(7)>.skills-container >h6 svg { 
-  color:#07a807
-}
-.skills-con:nth-child(8)>.skills-container >h6 svg { 
-  color:#8aee8a
-}
 
 .Experience {
   margin-top: 120px;
@@ -340,10 +308,7 @@ text-indent:10px;
     width: 270px;
     padding-right: 950px;
   }
-  .skillsTitle h1{
-    width: 270px;
-    padding-right: 950px;
-  }
+
   .list{
     padding:0;
   }
@@ -353,22 +318,7 @@ text-indent:10px;
   }
 
 }
-@media only screen and (max-width: 865px) {
 
-
-  .Experience h1{
-    width: 200px;
-    padding-right: 760px;
-  }
-  .skillsTitle h1{
-    width: 180px;
-    padding-right: 760px;
-  }
-  .Canvas_About_Text h1{
-    width: 180px;
-    padding-right: 760px;
-  }
-}
 @media only screen and (max-width: 800px) {
   .text1{
     font-size: 100px ;
@@ -422,18 +372,12 @@ text-indent:10px;
     font-size: 30px;
   }
   .Experience h1{
-    width: 200px;
-    padding-right: 520px;
     border-bottom: 5px solid ;
   }
   .skillsTitle h1{
-    width: 200px;
-    padding-right: 520px;
     border-bottom: 5px solid ;
   }
   .Canvas_About_Text h1{
-    width: 200px;
-    padding-right: 520px;
     border-bottom: 5px solid ;
   }
 
@@ -455,9 +399,9 @@ text-indent:10px;
     overflow: hidden;
    
   }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 505px) {
     .text1{
-      font-size: 70px ;
+      font-size: 60px ;
     }
     .text2{
       font-size: 40px ;
@@ -479,21 +423,6 @@ text-indent:10px;
       transform: translateY(-100px);
     }
     
-    .Experience h1{
-      width: 140px;
-      padding-right: 460px;
-      border-bottom: 5px solid ;
-    }
-    .skillsTitle h1{
-      width: 140px;
-      padding-right: 460px;
-      border-bottom: 5px solid ;
-    }
-    .Canvas_About_Text h1{
-      width: 140px;
-      padding-right: 460px;
-      border-bottom: 5px solid ;
-    }
     
     .buttons{
       width: 80px;

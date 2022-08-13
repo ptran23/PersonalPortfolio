@@ -11,8 +11,8 @@ function SkillsComp({skillsItem}) {
       {
         skillsItem.map((skillsItem) =>{
           return <div data-aos="zoom-in" className='skills-con' id={skillsItem.name} key={skillsItem.id} >
-            <div className='skills-container' id = {skillsItem.name}>
-              <h6> {skillsItem.image} </h6>
+            <div className='skills-container' >
+              <h6 id = {skillsItem.name}> {skillsItem.image} </h6>
               <h2>{skillsItem.name}</h2>
             </div>
 

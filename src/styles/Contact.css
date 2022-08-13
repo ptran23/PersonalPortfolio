@@ -51,6 +51,7 @@
     font-size:40px;
     transform:translateY(-30px);
     color:rgb(255, 255, 255);
+    text-shadow: 4px 4px 6px #000000;
   }
   input[type=text]{
     width: 80%;

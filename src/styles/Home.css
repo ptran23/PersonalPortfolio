@@ -39,7 +39,7 @@
 }
 .text2{
   font-size:70px;
-  color:rgb(236, 161, 22);
+  color:orange;
   font-weight: bolder;
   margin-top:-40px;
   letter-spacing: 9px;
@@ -425,6 +425,9 @@ text-indent:10px;
     .buttons{
       width: 80px;
     }
+    .Canvas_About_Text h1{
+      font-size: 18px ;
+    }
     .Circle{
       width:350px;
       height: 350px; 
@@ -441,7 +444,7 @@ text-indent:10px;
 
   @media only screen and (max-width: 340px) {
     .Canvas_About_Text h1{
-      font-size: 28px ;
+      font-size: 16px ;
     }
   }
 

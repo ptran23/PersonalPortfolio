@@ -3,7 +3,7 @@
   align-items: center;
   font-size: bolder;
   background-color: white !important; 
-  background-image: url(../assets/violetDrops.jpg) ; 
+  background-image: url(../assets/violetDrops1.jpg) ; 
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -35,16 +35,16 @@
   color:orange;
   font-weight: bolder;
   position: relative;
-  text-shadow: 4px 4px 6px #000000;
+  text-shadow: 6px 6px 6px #000000;
 }
 .text2{
   font-size:70px;
   color:orange;
   font-weight: bolder;
-  margin-top:-40px;
-  letter-spacing: 9px;
+  margin-top:-35px;
+  letter-spacing: 5px;
   animation: text 3s 1;
-  text-shadow: 4px 4px 6px #000000;
+  text-shadow: 6px 6px 6px #000000;
 }
 
 @keyframes text{
@@ -426,7 +426,7 @@ text-indent:10px;
       width: 80px;
     }
     .Canvas_About_Text h1{
-      font-size: 18px ;
+      font-size: 29.5px ;
     }
     .Circle{
       width:350px;
@@ -444,7 +444,7 @@ text-indent:10px;
 
   @media only screen and (max-width: 340px) {
     .Canvas_About_Text h1{
-      font-size: 16px ;
+      font-size: 27px ;
     }
   }
 

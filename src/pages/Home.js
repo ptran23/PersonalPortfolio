@@ -145,7 +145,7 @@ const allCategories = ['All',...new Set(SkillsList.map(SkillsList => SkillsList.
 
           <div className='Circle'>
             <div  className='Canvas_Model'>
-              <Canvas flat dpr={[1, 2]} camera={{ fov: 50, position: [-30, 20, 40] }} >
+              <Canvas flat dpr={[1, 2]} camera={{ fov: 50, position: [-18, 20, 40] }} >
                 <OrbitControls enableZoom={true} maxDistance ={11} maxPolarAngle = {Math.PI * 0.45} minPolarAngle = {Math.PI * 0.45}/>
                 <ambientLight intensity={0.4}/>
                 <spotLight intensity={0.8} position={[300, 300, 500]} />

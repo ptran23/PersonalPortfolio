@@ -4,6 +4,7 @@
   font-size: bolder;
   background-color: white !important; 
   background-image: url(../assets/violetDrops1.jpg) ; 
+  background-size: cover;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -35,7 +36,16 @@
   color:orange;
   font-weight: bolder;
   position: relative;
-  text-shadow: 4px 4px 6px #000000;
+  text-shadow: 1px 1px 1px #000000,
+               1px 2px 1px #000000,
+               1px 3px 1px #000000,
+               1px 4px 1px #000000,
+               1px 5px 1px #000000,
+               1px 6px 1px #000000,
+               1px 7px 1px #000000,
+               1px 8px 1px #000000,
+               1px 9px 1px #000000;
+
 }
 .text2{
   font-size:70px;
@@ -44,7 +54,15 @@
   margin-top:-35px;
   letter-spacing: 5px;
   animation: text 3s 1;
-  text-shadow: 4px 4px 6px #000000;
+  text-shadow: 1px 1px 1px #000000,
+  1px 2px 1px #000000,
+  1px 3px 1px #000000,
+  1px 4px 1px #000000,
+  1px 5px 1px #000000,
+  1px 6px 1px #000000,
+  1px 7px 1px #000000,
+  1px 8px 1px #000000,
+  1px 9px 1px #000000;
 }
 
 @keyframes text{
@@ -446,8 +464,8 @@ text-indent:10px;
     .Canvas_About_Text h1{
       font-size: 27px ;
     }
-    .Canvas p {
-      font-size: 14px
+    .Canvas_About_Text p {
+      font-size: 13px
     }
   }
 

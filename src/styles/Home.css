@@ -474,5 +474,9 @@ text-indent:10px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     } 
+
+    .Canvas_About_Text h1{
+      font-size: 23px ;
+    }
   }
 }

@@ -105,7 +105,7 @@ const allCategories = ['All',...new Set(SkillsList.map(SkillsList => SkillsList.
 
       <div className ='about'>
         <div className='nameContainer'>
-           <span className='text1'>Hi, Im Peter</span>
+           <span className='text1'>Hi, I'm Peter</span>
            <span className='text2'>Developer</span>
         </div>
 

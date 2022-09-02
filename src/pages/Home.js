@@ -20,7 +20,7 @@ import url from '../assets/spyFamily.mp4'
 
 function World() {
   const ref = useRef()
-  useFrame((state,delta) =>  (ref.current.rotation.y += 0.0008))
+  useFrame((state,delta) =>  (ref.current.rotation.y += 0.0009))
 
   const {nodes} = useGLTF('/newWorld2.glb')
   const [baked,topBaked,treeBaked]= useLoader(THREE.TextureLoader,[ BakedTexture,TopBakedTexture,TreeBakedTexture])

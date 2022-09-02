@@ -166,9 +166,12 @@ text-indent:10px;
 .list{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-left:0;
+  margin-left:13.5vw;
+  max-width: 70vw;
   grid-gap:10px;
-  padding: 0 200px 0 200px;
+  /*padding: 0 200px 0 200px;*/
+  
+
   
 }
 .skills-container{
@@ -325,10 +328,6 @@ text-indent:10px;
   .Experience h1{
     width: 270px;
   }
-
-  .list{
-    padding:0;
-  }
   .Canvas_About_Text h1{
     width: 270px;
   }
@@ -422,6 +421,10 @@ text-indent:10px;
     .text2{
       font-size: 40px ;
       margin-top: 1px;
+    }
+    .list{
+      margin-left:0;
+      max-width: 100vw;
     }
   }
   @media only screen and (max-width: 450px) {

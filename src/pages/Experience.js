@@ -31,7 +31,7 @@ function Experience() {
         icon={<WorkIcon/>}
         >
           <h3 className = "vertical-timeline-element-title">Sitel, Remote</h3>
-          <p>Customer Service Representative and Mentor</p>
+          <p>Team lead analyst</p>
           
         </VerticalTimelineElement>
       </VerticalTimeline>

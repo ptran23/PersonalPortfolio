@@ -27,7 +27,7 @@ function World() {
   
   extend({ World })
   return(
-    <group ref={ref}  position={[0,0,0]} rotation={[0.2,-3,0]}>
+    <group ref={ref}  position={[0,-15,0]} rotation={[-0.9,0,0 ]}>
       <mesh  name="Gem" geometry={nodes.Gem.geometry} material={nodes.Gem.material} position={[-14.26, -2.94, -16.76]}>
       <meshBasicMaterial map={baked} map-flipY={false}/>
       </mesh>

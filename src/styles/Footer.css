@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-   min-height: calc(100vh - 600px);
+    min-height: calc(100vh - 600px);
     background-color: rgb(80, 82, 224);
     display: flex;
     justify-content: center;

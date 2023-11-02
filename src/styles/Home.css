@@ -1,5 +1,6 @@
 .home {
   width: 100%;
+  height: 100%;
   align-items: center;
   font-size: bolder;
   background-color: white !important; 
@@ -20,6 +21,7 @@
   text-align: center;
   background: white;
   z-index: 1;
+  
 }
 
 .nameContainer{
@@ -28,52 +30,53 @@
   position: absolute;
   z-index:2;
   transform: translateY(-70%);
- 
+}
+
+@font-face{
+  font-family: 'Customfont1';
+  src: local('Customfont1'),
+  url('../fonts/PassionOne-Regular.ttf') format('woff')
 }
 .text1{
+  height: 100%;
   font-size: 120px;
-  letter-spacing: 5px;
-  color:orange;
-  font-weight: bolder;
+  font-family: CustomFont1;
+  font-weight: 700;
+  letter-spacing: 4px;
   position: relative;
-  text-shadow: 1px 1px 1px #000000,
-               1px 2px 1px #000000,
-               1px 3px 1px #000000,
-               1px 4px 1px #000000,
-               1px 5px 1px #000000,
-               1px 6px 1px #000000,
-               1px 7px 1px #000000,
-               1px 8px 1px #000000,
-               1px 9px 1px #000000;
-
+  text-shadow:  1px 2px 3px #636262; 
+}
+.word1{
+  color: #78149c;
+}
+.word2{
+  color: #EE4266;
+}
+.word3{
+  font-size: ;
+  padding-left: 2vh;
+  color: #FFD650;
 }
 .text2{
   font-size:70px;
-  color:orange;
+  font-family: CustomFont1;
+  color: #3BCEAC;
   font-weight: bolder;
   margin-top:-35px;
   letter-spacing: 5px;
   animation: text 3s 1;
-  text-shadow: 1px 1px 1px #000000,
-  1px 2px 1px #000000,
-  1px 3px 1px #000000,
-  1px 4px 1px #000000,
-  1px 5px 1px #000000,
-  1px 6px 1px #000000,
-  1px 7px 1px #000000,
-  1px 8px 1px #000000,
-  1px 9px 1px #000000;
+  text-shadow:  1px 2px 3px #636262; 
 }
 
 @keyframes text{
   0%{
-    color:rgb(92, 95, 226);
+    color: #0C8E56;
     margin-bottom: -40px;
   }
   30%{
     letter-spacing: 25px;
     margin-bottom: -40px;
-    color:rgb(92, 95, 226);
+    color: #0EAD69;
   }
   85%{
     letter-spacing: 8px;
@@ -82,8 +85,11 @@
 
 }
 
-.about span{
-  display:block;
+.about .text1{
+  display:inline-block;
+}
+.about .text2{
+  display: block;
 }
 
 .textCanvas {

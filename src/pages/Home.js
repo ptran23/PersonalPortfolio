@@ -1,7 +1,6 @@
 import React, {useEffect, useRef,useState} from 'react'
 import "../styles/Home.css"
 import {Canvas,extend, useLoader,useFrame} from "@react-three/fiber"
-
 import House from '../Room'
 import {OrbitControls,useGLTF, TrackballControls,Stage, useAnimations} from "@react-three/drei"
 import * as THREE from 'three'
@@ -27,7 +26,7 @@ function World() {
   
   extend({ World })
   return(
-    <group ref={ref}  position={[0,-15,0]} rotation={[-0.9,0,0 ]}>
+    <group ref={ref}  position={[0,-17,0]} rotation={[-0.5,0,0 ]}>
       <mesh  name="Gem" geometry={nodes.Gem.geometry} material={nodes.Gem.material} position={[-14.26, -2.94, -16.76]}>
       <meshBasicMaterial map={baked} map-flipY={false}/>
       </mesh>
@@ -104,8 +103,12 @@ const allCategories = ['All',...new Set(SkillsList.map(SkillsList => SkillsList.
     <div className='home'>
 
       <div className ='about'>
-        <div className='nameContainer'>
-           <span className='text1'>Hi, I'm Peter</span>
+        <div className='nameContainer' >
+           <span className='text1'>
+              <span class="word1"> HI </span>
+              <span class="word2">I'M</span>
+              <span class="word3" >PETER</span>
+           </span>
            <span className='text2'>Developer</span>
         </div>
 

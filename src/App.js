@@ -18,7 +18,7 @@ function App() {
       <HelmetProvider>
         <Helmet>
           <title>About Peter</title>
-          <link rel="canonical" href="https://www.aboutpete.com/" />
+          <link rel="canonical" href="https://www.about-peter.com/" />
         </Helmet>
         </HelmetProvider>
         <ScrollToTop/>

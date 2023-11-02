@@ -44,18 +44,21 @@
   font-weight: 700;
   letter-spacing: 4px;
   position: relative;
-  text-shadow:  1px 2px 3px #636262; 
+  
 }
 .word1{
   color: #78149c;
+  text-shadow:  4px 4px 4px rgb(112, 6, 173))
+  
 }
 .word2{
   color: #EE4266;
+  text-shadow:  4px 4px 4px rgb(163, 3, 51)
 }
 .word3{
-  font-size: ;
   padding-left: 2vh;
   color: #FFD650;
+  text-shadow:  4px 4px 4px rgb(119, 119, 1); 
 }
 .text2{
   font-size:70px;
@@ -171,26 +174,26 @@ text-indent:10px;
 .list{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-left:13.5vw;
+  margin-left:15vw;
   max-width: 70vw;
   grid-gap:10px;
   /*padding: 0 200px 0 200px;*/
   
 }
 .skills-container{
+  height: 100%;
   overflow: hidden;
   padding-bottom: 20px;
   color: rgb(37, 194, 241);
   border-radius: 10px;
-  height: 100%;
   
 }
 .skills-con{
- 
+  width:22vw;
   margin-top: 15px;
   transition:all .3s ease-in-out;
   border-radius: 10px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to bottom, #ece6f3 0%, #ace0f9 100%);
 }
 #ReactJS{
@@ -450,7 +453,7 @@ text-indent:10px;
       width: 80px;
     }
     .Canvas_About_Text h1{
-      font-size: 29.5px ;
+      font-size: 27.5px ;
     }
     .Circle{
       width:350px;
